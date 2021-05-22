@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://shubhamvora:Vora.@123@cluster0.x5gph.mongodb.net/ToDoList?retryWrites=true&w=majority",{useNewUrlParser: true},{ useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://shubhamvora:<your-password>@cluster0.x5gph.mongodb.net/ToDoList?retryWrites=true&w=majority",{useNewUrlParser: true},{ useUnifiedTopology: true })
 //mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser: true});
 
 const itemsSchema = {
